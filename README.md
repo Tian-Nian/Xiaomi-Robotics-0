@@ -5,8 +5,9 @@
   **An Open-Sourced Vision-Language-Action Model with Real-Time Inference**
 
   [![Paper](https://img.shields.io/badge/📄-Paper-red)](https://arxiv.org/abs/2602.12684)
-  [![Project Page](https://img.shields.io/badge/🌐-Project_Page-blue)](https://xiaomi-robotics-0.github.io/)
+  [![Project Page](https://img.shields.io/badge/🌐-Project_Page-blue)](https://robotics.xiaomi.com/xiaomi-robotics-0.html)
   [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow)](https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-0)
+  [![Post-Training](https://img.shields.io/badge/🛠️-Post--Training-orange)](xr0/)
   [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
 
 </div>
@@ -15,7 +16,8 @@
 
 ## 💡 About Xiaomi-Robotics-0
 
-**Xiaomi-Robotics-0** is a state-of-the-art **Vision-Language-Action (VLA) model** with 4.7B parameters, specifically engineered for high-performance robotic reasoning and seamless real-time execution. 
+**Xiaomi-Robotics-0** is a state-of-the-art **Vision-Language-Action (VLA) model** with 4.7B parameters, specifically engineered for high-performance and seamless real-time execution.
+Try out [the post-training code](xr0/) on your data!
 
 ### Key Features:
 
@@ -27,6 +29,7 @@
 
 ## 📅 Updates
 
+- **[Apr 27, 2026]** 🚀 Open-sourced [**the post-training code**](xr0/) for **Xiaomi-Robotics-0**. See [**the Post-training section**](https://xiaomi-robotics-0.github.io/#post-training) on the project page for details.
 - **[Feb 2026]** 🎉 Released the **Technical Report**.
 - **[Feb 2026]** 🔥 Released **Pre-trained weights** and **Fine-tuned weights** for LIBERO, CALVIN, and SimplerEnv.
 - **[Feb 2026]** 💻 Inference code and evaluation scripts are now live!
@@ -46,7 +49,7 @@ We evaluate **Xiaomi-Robotics-0** on three standard simulation benchmarks: **CAL
 |                | [**Xiaomi-Robotics-0-Calvin-ABC_D**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-Calvin-ABC_D) | Fine-tuned on ABC→D Split.        | **4.75** (Avg Length)              | [CALVIN Eval](eval_calvin/README.md)         |
 | **SimplerEnv** | [**Xiaomi-Robotics-0-SimplerEnv-Google-Robot**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-SimplerEnv-Google-Robot) | Fine-tuned on Fractal dataset.    | **85.5%** (VM) <br> **74.7%** (VA) | [SimplerEnv Eval](eval_simplerenv/README.md) |
 |                | [**Xiaomi-Robotics-0-SimplerEnv-WidowX**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-SimplerEnv-WidowX) | Fine-tuned on Bridge dataset.     | **79.2%**                          | [SimplerEnv Eval](eval_simplerenv/README.md) |
-| **Base**       | [**Xiaomi-Robotics-0**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0) | Pre-trained model.                | -                                  | -                                            |
+| **Base**       | [**Xiaomi-Robotics-0**](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-Pretrain) | Pre-trained model.                | -                                  | -                                            |
 
 
 
@@ -134,6 +137,10 @@ with torch.no_grad():
 action_chunk = processor.decode_action(outputs.actions, robot_type=robot_type)
 print(f"Generated Action Chunk Shape: {action_chunk.shape}")
 ```
+
+## 🛠️ Post-Training
+
+Besides inference and evaluation, we also open-source the post-training pipeline for adapting **Xiaomi-Robotics-0** on real robots. The post-training codebase and sample data are available in [`xr0/`](xr0/). For detailed instructions on installation, data preparation, training, and deployment, please refer to [`xr0/README.md`](xr0/README.md).
 
 
 
