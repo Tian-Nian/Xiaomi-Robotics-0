@@ -29,7 +29,7 @@ Try out [the post-training code](xr0/) on your data!
 
 ## 📅 Updates
 
-- **[Apr 27, 2026]** 🚀 Open-sourced [**the post-training code**](xr0/) for **Xiaomi-Robotics-0**. See [**the Post-training section**](https://xiaomi-robotics-0.github.io/#post-training) on the project page for details.
+- **[Apr 27, 2026]** 🚀 Open-sourced [**the post-training code**](xr0/) for **Xiaomi-Robotics-0**. See [**the Post-training section**](https://robotics.xiaomi.com/xiaomi-robotics-0.html) on the project page for details.
 - **[Feb 2026]** 🎉 Released the **Technical Report**.
 - **[Feb 2026]** 🔥 Released **Pre-trained weights** and **Fine-tuned weights** for LIBERO, CALVIN, and SimplerEnv.
 - **[Feb 2026]** 💻 Inference code and evaluation scripts are now live!

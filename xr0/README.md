@@ -2,7 +2,7 @@
 
 Xiaomi-Robotics-0 (or XR-0) can be efficiently post-trained from [the pre-trained model](https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-0-Pretrain).
 In the following, we show how we post-train the model to learn a complex manipulation task of packing earphones with 20 hours of data.
-For an overview of the method, see [**the Post-training section**](https://xiaomi-robotics-0.github.io/#post-training) on the project page.
+For an overview of the method, see [**the Post-training section**](https://robotics.xiaomi.com/xiaomi-robotics-0.html) on the project page.
 
 ## Architecture
 
