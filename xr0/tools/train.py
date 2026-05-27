@@ -68,7 +68,6 @@ def prepare(cfg: Dict[str, Any]) -> Tuple[Config, LightningDataModule, Lightning
         WandbLogger(
             project=cfg.trainer.pop("project"),
             name=cfg.trainer.pop("exp_name"),
-            entity="rfm",
             config=cfg,
         )
     ]
